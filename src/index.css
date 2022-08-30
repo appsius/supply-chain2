@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: hidden !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  overflow: scroll !important;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  width: 10vw !important;
+  padding: 0.25rem 0px !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  padding-left: 20% !important;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: black !important;
+  width: 10vw;
+  /* padding: 10px 17.5% !important; */
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  border-radius: 0 !important;
+}
