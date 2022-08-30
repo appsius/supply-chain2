@@ -60,9 +60,9 @@ function CitiesTable({
   //   'http://45.130.15.52:6501/api/services/app/City/Delete?Id=';
 
   // json-server delete urls
-  const cityCreateURL = 'http://localhost:3000/cities';
-  const cityUpdateURL = 'http://localhost:3000/cities/';
-  const cityDeleteURL = 'http://localhost:3000/cities/';
+  const cityCreateURL = '/cities';
+  const cityUpdateURL = '/cities/';
+  const cityDeleteURL = '/cities/';
   // selected city update data
   const [selectedCity, setSelectedCity] = useState({});
   const [selectedCityName, setSelectedCityName] = useState('');

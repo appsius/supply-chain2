@@ -62,9 +62,9 @@ function SuppliersTable({
   //   'http://45.130.15.52:6501/api/services/app/Supplier/Delete?Id=';
 
   // json-server delete urls
-  const supplierCreateURL = 'http://localhost:3000/suppliers';
-  const supplierUpdateURL = 'http://localhost:3000/suppliers/';
-  const supplierDeleteURL = 'http://localhost:3000/suppliers/';
+  const supplierCreateURL = '/suppliers';
+  const supplierUpdateURL = '/suppliers/';
+  const supplierDeleteURL = '/suppliers/';
   // selected supplier update data
   const [selectedUpdateSupplier, setSelectedUpdateSupplier] = useState({});
   const [updateSupplierCode, setUpdateSupplierCode] = useState('');

@@ -59,9 +59,9 @@ function CountriesTable({
   //   'http://45.130.15.52:6501/api/services/app/Country/Delete?Id=';
   // country post/update/delete URLs
   // json-server delete urls
-  const countryCreateURL = 'http://localhost:3000/countries';
-  const countryUpdateURL = 'http://localhost:3000/countries/';
-  const countryDeleteURL = 'http://localhost:3000/countries/';
+  const countryCreateURL = '/countries';
+  const countryUpdateURL = '/countries/';
+  const countryDeleteURL = '/countries/';
   // selected country update data
   const [selectedCountry, setSelectedCountry] = useState({});
   const [selectedCountryName, setSelectedCountryName] = useState('');

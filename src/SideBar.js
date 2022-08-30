@@ -22,10 +22,10 @@ function SideBar({ classes }) {
   // const citiesGetURL = 'http://45.130.15.52:6501/api/services/app/City/GetAll';
 
   // get data URLs - JSON_SERVER
-  const suppliersGetURL = 'http://localhost:3000/suppliers';
-  const countriesGetURL = 'http://localhost:3000/countries';
-  const citiesGetURL = 'http://localhost:3000/cities';
-  const supplierTypesGetURL = 'http://localhost:3000/supplierTypes';
+  const suppliersGetURL = '/suppliers';
+  const countriesGetURL = '/countries';
+  const citiesGetURL = '/cities';
+  const supplierTypesGetURL = '/supplierTypes';
   // data to fetch
   const [suppliers, setSuppliers] = useState([]);
   const [countries, setCountries] = useState([]);
