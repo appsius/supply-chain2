@@ -83,80 +83,86 @@ function SideBar({ classes }) {
         <div className={classes.Menu}>
           <PopupState variant='popover' popupId='demo-popup-menu'>
             {(popupState) => (
-              <React.Fragment>
-                <Button
-                  variant='contained'
-                  {...bindTrigger(popupState)}
+              <React.Fragment style={{ width: '13vw' }}>
+                <div
                   style={{
-                    backgroundColor: 'black',
-                    textTransform: 'uppercase',
-                    minWidth: '64px',
-                    padding: '6px 16px',
-                    borderRadius: '4px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                   }}
                 >
-                  Dashboard
-                </Button>
-                <Menu
-                  {...bindMenu(popupState)}
-                  className={classes.MenuList}
-                  style={{ marginLeft: '.25vw', width: '9.5vw' }}
-                >
-                  <MenuItem
-                    style={{ padding: '1.25vw 1.5vw' }}
-                    className={
-                      renderedData === 'suppliers-rendered'
-                        ? `${classes.MenuListItemRendered} ${classes.MenuListItem}`
-                        : `${classes.MenuListItem}`
-                    }
-                    onClick={() =>
-                      handleClick(
-                        suppliersGetURL,
-                        setSuppliers,
-                        popupState,
-                        'suppliers-rendered'
-                      )
-                    }
+                  <Button
+                    variant='contained'
+                    {...bindTrigger(popupState)}
+                    style={{
+                      backgroundColor: 'black',
+                      textTransform: 'uppercase',
+                      minWidth: '64px',
+                      padding: '6px 16px',
+                      borderRadius: '4px',
+                    }}
                   >
-                    Suppliers
-                  </MenuItem>
-                  <MenuItem
-                    style={{ padding: '1.25vw 1.5vw' }}
-                    className={
-                      renderedData === 'countries-rendered'
-                        ? `${classes.MenuListItemRendered} ${classes.MenuListItem}`
-                        : `${classes.MenuListItem}`
-                    }
-                    onClick={() =>
-                      handleClick(
-                        countriesGetURL,
-                        setCountries,
-                        popupState,
-                        'countries-rendered'
-                      )
-                    }
+                    Dashboard
+                  </Button>
+                  <Menu
+                    {...bindMenu(popupState)}
+                    className={classes.MenuList}
+                    style={{ width: '12vw' }}
                   >
-                    Countries
-                  </MenuItem>
-                  <MenuItem
-                    style={{ padding: '1.25vw 1.5vw' }}
-                    className={
-                      renderedData === 'cities-rendered'
-                        ? `${classes.MenuListItemRendered} ${classes.MenuListItem}`
-                        : `${classes.MenuListItem}`
-                    }
-                    onClick={() =>
-                      handleClick(
-                        citiesGetURL,
-                        setCities,
-                        popupState,
-                        'cities-rendered'
-                      )
-                    }
-                  >
-                    Cities
-                  </MenuItem>
-                </Menu>
+                    <MenuItem
+                      className={
+                        renderedData === 'suppliers-rendered'
+                          ? `${classes.MenuListItemRendered} ${classes.MenuListItem}`
+                          : `${classes.MenuListItem}`
+                      }
+                      onClick={() =>
+                        handleClick(
+                          suppliersGetURL,
+                          setSuppliers,
+                          popupState,
+                          'suppliers-rendered'
+                        )
+                      }
+                    >
+                      Suppliers
+                    </MenuItem>
+                    <MenuItem
+                      className={
+                        renderedData === 'countries-rendered'
+                          ? `${classes.MenuListItemRendered} ${classes.MenuListItem}`
+                          : `${classes.MenuListItem}`
+                      }
+                      onClick={() =>
+                        handleClick(
+                          countriesGetURL,
+                          setCountries,
+                          popupState,
+                          'countries-rendered'
+                        )
+                      }
+                    >
+                      Countries
+                    </MenuItem>
+                    <MenuItem
+                      className={
+                        renderedData === 'cities-rendered'
+                          ? `${classes.MenuListItemRendered} ${classes.MenuListItem}`
+                          : `${classes.MenuListItem}`
+                      }
+                      onClick={() =>
+                        handleClick(
+                          citiesGetURL,
+                          setCities,
+                          popupState,
+                          'cities-rendered'
+                        )
+                      }
+                    >
+                      Cities
+                    </MenuItem>
+                  </Menu>
+                </div>
               </React.Fragment>
             )}
           </PopupState>
